@@ -1,20 +1,18 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'iyadchirifi940@gmail.com',
 
-    emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
-
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    emailSubject: "Let's connect !",
+    emailBody: 'Hi Iyad, I am reaching out to you because...',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/4xeoz' },
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/iyad-mohamed-cherifi-189a59292/',
+    },
 ];
 
 export const MY_STACK = {
@@ -110,199 +108,289 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
-        slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
+        title: 'MoneyGrad - Green Tech Jam Competition',
+        slug: 'moneygrad',
+        liveUrl: 'https://v0-moneygrad-website.vercel.app/',
         year: 2025,
         description: `
-      A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
-        techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
-    },
-    {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
+        An award-winning full-stack AI-powered financial literacy app built during the Green Tech Jam inter-university competition. Tackles UN SDG 4 (Quality Education) and SDG 8 (Economic Growth).<br/><br/>
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        Key Features:<br/>
+        <ul>
+          <li>📊 OCR-to-AI pipeline for reading and classifying spending habits</li>
+          <li>🤖 Google LLMs generate personalized financial feedback</li>
+          <li>🐳 Dockerized microservices tested via SSH on local Linux machines</li>
+          <li>🧠 Microlearning with gamified financial simulations</li>
+        </ul>
+        `,
+        role: `
+        Project Manager & AI Developer<br/>
+        <ul>
+          <li>🧩 Led a team of 6 developers/designers, running agile sprints and daily standups</li>
+          <li>🔍 Built the AI pipeline using Google Vision OCR and LLMs</li>
+          <li>💻 Deployed and tested the stack using Docker and local CI scripts</li>
+        </ul>
+        `,
+        techStack: [
+            'Next.js',
+            'Google Vision API',
+            'Docker',
+            'Python',
+            'LLMs',
+            'MongoDB',
+        ],
+        thumbnail: '/projects/thumbnail/moneygrad.webp',
+        longThumbnail: '/projects/long/moneygrad.webp',
+        images: [],
+    },
+    {
+        title: 'Blockchain Certificates - EncodeAI Hackathon',
+        slug: 'encodeai',
+        liveUrl: '',
+        year: 2025,
+        description: `
+        Blockchain-based certification platform created for the EncodeAI Hackathon. Bridges AI assessments with on-chain credentials.<br/><br/>
+
+        Key Features:<br/>
+        <ul>
+          <li>🪙 Solana blockchain for verifiable learning credentials</li>
+          <li>🦄 Phantom wallet integration and Web3 auth</li>
+          <li>🎨 Motion-enhanced UI using Framer Motion and GSAP</li>
+        </ul>
+        `,
+        role: `
+        Blockchain Engineer & Frontend Developer<br/>
+        <ul>
+          <li>🔗 Wrote Rust smart contracts to store learner data on Solana</li>
+          <li>🔐 Implemented wallet auth and on-chain verification</li>
+          <li>🎭 Designed interactive animations to boost engagement</li>
+        </ul>
+        `,
+        techStack: [
+            'Solana',
+            'Rust',
+            'React',
+            'Web3',
+            'Phantom',
+            'Framer Motion',
+            'GSAP',
+        ],
+        thumbnail: '/projects/thumbnail/encodeai.webp',
+        longThumbnail: '/projects/long/encodeai.webp',
+        images: [],
+    },
+    {
+        title: 'NeuroBridge AI — Microsoft Hackathon',
+        slug: 'neurobridge',
+        liveUrl: '',
+        year: 2025,
+        description: `
+        Personalized AI-powered learning assistant built for Microsoft Hackathon. Adapts content to user interests and reading level.<br/><br/>
+
+        Key Features:<br/>
+        <ul>
+          <li>🎤 TTS voice generation tailored to user profile</li>
+          <li>🧠 Azure OpenAI rephrasing for clearer explanations</li>
+          <li>⚙️ Dynamic content pipelines</li>
+        </ul>
+        `,
+        role: `
+        Full-Stack AI Developer<br/>
+        <ul>
+          <li>🛠️ Integrated Azure OpenAI APIs for semantic rephrasing</li>
+          <li>🗣️ Deployed adaptive text-to-speech voice synthesis</li>
+          <li>📦 Designed data flow for personalized education delivery</li>
+        </ul>
+        `,
+        techStack: [
+            'Azure OpenAI',
+            'Next.js',
+            'TTS APIs',
+            'Python',
+            'Tailwind CSS',
+        ],
+        thumbnail: '/projects/thumbnail/neurobridge.webp',
+        longThumbnail: '/projects/long/neurobridge.webp',
+        images: [],
+    },
+    {
+        title: 'Moderating System — Surrey Hackathon 24',
+        slug: 'university-moderating-system',
+        liveUrl: '',
+        year: 2024,
+        description: `
+        Moderation tool created at Surrey Hackathon 2024 to help educators manage roles and content access.<br/><br/>
+
+        Key Features:<br/>
+        <ul>
+          <li>🔐 Role-based access control (RBAC)</li>
+          <li>🌐 Django REST back-end with React front-end</li>
+          <li>📂 AWS S3 for secure media storage</li>
+        </ul>
+        `,
+        role: `
+        Backend & Full-Stack Developer<br/>
+        <ul>
+          <li>📦 Built Django REST API with RBAC support</li>
+          <li>🧩 Connected AWS S3 for scalable file storage</li>
+          <li>🚀 Deployed MVP in under 72 hours</li>
+        </ul>
+        `,
+        techStack: ['Django', 'React', 'AWS S3', 'Python', 'REST API'],
+        thumbnail: '/projects/thumbnail/moderating-system.webp',
+        longThumbnail: '/projects/long/moderating-system.webp',
+        images: [],
+    },
+    {
+        title: 'CompSoc Full-Stack Application',
+        slug: 'compsoc-app',
+        liveUrl: 'https://compsoc-lovat.vercel.app/',
+        year: 2024,
+        description: `
+        Internal platform for University of Surrey’s Computing Society.<br/><br/>
+        Key Features:<ul>
+          <li>Next.js 14 App Router with Tailwind & Prisma</li>
+          <li>Typed API layer and auth via Clerk</li>
+          <li>Playwright testing and GitHub CI/CD</li>
+        </ul>
+        `,
+        role: `
+        Tech Lead & Web Master<br/>
+        <ul>
+          <li>Built and maintained the full app architecture</li>
+          <li>Led 2 devs in Agile sprints and retrospectives</li>
+        </ul>
+        `,
+        techStack: [
+            'Next.js',
+            'Prisma',
+            'MongoDB',
+            'Tailwind CSS',
+            'Clerk',
+            'Playwright',
+        ],
+        thumbnail: '/projects/thumbnail/compsoc.webp',
+        longThumbnail: '/projects/long/compsoc.webp',
+        images: [],
+    },
+    {
+        title: 'Percent App',
+        slug: 'percent-app',
+        liveUrl: 'https://www.percentapp.org/',
+        year: 2024,
+        description: `
+        A productivity tracker and goal management mobile/web app.<br/><br/>
+        Key Features:<ul>
+          <li>SwiftUI frontend for iOS</li>
+          <li>Firebase backend with analytics</li>
+          <li>Next.js dashboard for data sync</li>
+        </ul>
+        `,
+        role: `
+        Full-Stack Developer<br/>
+        <ul>
+          <li>Built iOS frontend and integrated Firebase</li>
+          <li>Created web dashboard and user sync logic</li>
+        </ul>
+        `,
+        techStack: ['SwiftUI', 'Next.js', 'Firebase', 'Tailwind CSS'],
+        thumbnail: '/projects/thumbnail/percent.webp',
+        longThumbnail: '/projects/long/percent.webp',
+        images: [],
+    },
+    {
+        title: 'Full-Stack E-Commerce Web App',
+        slug: 'ecommerce-shiraz',
+        liveUrl: 'https://github.com/4xeoz/e-commerce-shiraz',
+        year: 2023,
+        description: `
+        Secure and scalable full-stack online store with auth and payments.<br/><br/>
+        Key Features:<ul>
+          <li>Stripe payments, image CDN via Cloudinary</li>
+          <li>OWASP top-10 compliant authentication</li>
+        </ul>
+        `,
+        role: `
+        Solo Full-Stack Developer<br/>
+        <ul>
+          <li>Implemented Stripe payments and secure auth</li>
+          <li>Used Prisma/MongoDB for the data layer</li>
+        </ul>
+        `,
+        techStack: ['Next.js', 'Prisma', 'MongoDB', 'Stripe', 'Cloudinary'],
+        thumbnail: '/projects/thumbnail/ecommerce.webp',
+        longThumbnail: '/projects/long/ecommerce.webp',
+        images: [],
+    },
+    {
+        title: 'Morse Code Decoder',
+        slug: 'morse-code-decoder',
+        liveUrl: 'https://github.com/4xeoz/Morse-Code-Decoder',
+        year: 2023,
+        description: `
+        Hardware-level Morse code decoder using Raspberry Pi Pico.<br/><br/>
+        Key Features:<ul>
+          <li>Multiplexed 7-segment display</li>
+          <li>Auditory feedback via buzzer</li>
+        </ul>
+        `,
+        role: `
+        Embedded Systems Developer<br/>
+        <ul>
+          <li>Built firmware in C++ for decoding logic</li>
+          <li>Handled I/O multiplexing and signal timing</li>
+        </ul>
+        `,
+        techStack: ['C++', 'Raspberry Pi Pico', 'Microcontrollers'],
+        thumbnail: '/projects/thumbnail/morse.webp',
+        longThumbnail: '/projects/long/morse.webp',
+        images: [],
+    },
+    {
+        title: 'Buy It — Cross-Platform Shopping App',
+        slug: 'buy-it',
+        liveUrl: '',
+        year: 2023,
+        description: `
+        Flutter-based shopping list app for households.<br/><br/>
+        Key Features:<ul>
+          <li>Real-time sync via Firebase</li>
+          <li>Google Analytics for behavior-driven updates</li>
+        </ul>
+        `,
+        role: `
+        Mobile App Developer<br/>
+        <ul>
+          <li>Implemented cross-device data sharing</li>
+          <li>Optimized UX through analytics feedback</li>
+        </ul>
+        `,
+        techStack: ['Flutter', 'Firebase', 'Google Analytics'],
+        thumbnail: '/projects/thumbnail/buyit.webp',
+        longThumbnail: '/projects/long/buyit.webp',
+        images: [],
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Software / AI Developer Contributor',
+        company: 'AI2030Marketplace',
+        duration: 'Jan 2025 – Present',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'Founding Software Engineer (Equity)',
+        company: 'Hushtap',
+        duration: 'May 2025 – Present',
     },
     {
-        title: 'FRONTEND ENGINEER',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'Co-Founder & Tech Lead',
+        company: 'WeTrends',
+        duration: 'Apr 2025 – Present',
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Web Master',
+        company: 'CompSoc SU',
+        duration: 'Jun 2024 – Jun 2025',
     },
 ];
