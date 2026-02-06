@@ -13,11 +13,13 @@ interface Props {
     title: string;
 }
 
+
+
 const SectionTitle = ({ icon, title, className, classNames }: Props) => {
     return (
         <div
             className={cn(
-                'flex items-center gap-4 mb-10',
+                'flex items-center gap-4 mb-10  ',
                 className,
                 classNames?.container,
             )}
@@ -35,7 +37,7 @@ const SectionTitle = ({ icon, title, className, classNames }: Props) => {
             )}
             <h2
                 className={cn(
-                    'text-xl uppercase leading-none',
+                    'text-2xl font-bold uppercase leading-none text-white/60',
                     classNames?.title,
                 )}
             >

@@ -11,15 +11,15 @@ const ParticleBackground = () => {
     useGSAP(() => {
         particlesRef.current.forEach((particle) => {
             gsap.set(particle, {
-                width: Math.random() * 3 + 1,
-                height: Math.random() * 3 + 1,
+                width: Math.random() * 5 + 1,
+                height: Math.random() * 5 + 1,
                 opacity: Math.random(),
                 left: Math.random() * window.innerWidth,
                 top: Math.random() * (window.innerHeight + 1),
             });
 
             gsap.to(particle, {
-                y: window.innerHeight,
+                y: - Math.random() * 1000 - 100,
                 duration: Math.random() * 10 + 10,
                 opacity: 0,
                 repeat: -1,

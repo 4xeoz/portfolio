@@ -1,26 +1,33 @@
-import { GENERAL_INFO } from '@/lib/data';
+import { SOCIAL_LINKS } from '@/lib/data';
+import { Instagram, Linkedin } from 'lucide-react';
 import React from 'react';
 
 const StickyEmail = () => {
+    const getIcon = (name: string) => {
+        switch (name) {
+            case 'instagram':
+                return <Instagram size={24} />;
+            case 'linkedin':
+                return <Linkedin size={24} />;
+            default:
+                return null;
+        }
+    };
+
     return (
-        <div className="max-xl:hidden fixed bottom-32 left-0 block">
-            <a
-                href={`mailto:${GENERAL_INFO.email}`}
-                className="px-3 text-muted-foreground tracking-[1px] transition-all !bg-bottom hover:text-foreground hover:!bg-center"
-                style={{
-                    // background:
-                    //     'linear-gradient(to bottom, hsl(var(--muted-foreground)) 0% 33.33%, hsl(var(--primary)) 33.33% 66.66%, hsl(var(--muted-foreground)) 66.66% 100%)',
-                    // backgroundSize: '100% 300%',
-
-                    // backgroundClip: 'text',
-                    // color: 'transparent',
-
-                    textOrientation: 'mixed',
-                    writingMode: 'vertical-rl',
-                }}
-            >
-                {GENERAL_INFO.email}
-            </a>
+        <div className="max-xl:hidden fixed bottom-32 right-10 block space-y-4">
+            {SOCIAL_LINKS.filter(link => link.name === 'linkedin' || link.name === 'instagram').map((link) => (
+                <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 text-muted-foreground transition-all hover:text-foreground block transform origin-center"
+                    aria-label={link.name}
+                >
+                    {getIcon(link.name)}
+                </a>
+            ))}
         </div>
     );
 };

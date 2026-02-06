@@ -11,7 +11,11 @@ export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/4xeoz' },
     {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/iyad-mohamed-cherifi-189a59292/',
+        url: 'https://www.linkedin.com/in/iyad-cherifi-189a59292/',
+    },
+    {
+        name: 'instagram',
+        url: 'https://instagram.com/yourusername', // Replace with actual Instagram URL
     },
 ];
 

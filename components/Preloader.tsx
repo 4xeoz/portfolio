@@ -24,13 +24,13 @@ const Preloader = () => {
 
             tl.to('.preloader-item', {
                 delay: 1,
-                y: '100%',
+                y: '-100%',
                 duration: 0.5,
                 stagger: 0.1,
             })
                 .to(
                     '.name-text span',
-                    { y: '-100%', stagger: 0.1, duration: 0.2 },
+                    { y: '100%', stagger: 0.1, duration: 0.2 },
                     '<0.5',
                 )
                 .to(
@@ -61,10 +61,9 @@ const Preloader = () => {
             <div className="preloader-item h-full w-[10%] bg-black"></div>
 
             <p className="name-text flex text-[20vw] lg:text-[200px] font-anton text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none overflow-hidden">
-                <span className="inline-block translate-y-full">I</span>
-                <span className="inline-block translate-y-full">Y</span>
-                <span className="inline-block translate-y-full">A</span>
-                <span className="inline-block translate-y-full">D</span>
+                <span className="inline-block translate-y-full">H</span>
+                <span className="inline-block translate-y-full">i</span>
+
             </p>
         </div>
     );

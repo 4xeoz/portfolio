@@ -16,7 +16,7 @@ const Banner = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'bottom 70%',
+                    start: 'bottom 90%',
                     end: 'bottom 10%',
                     scrub: 1,
                 },
@@ -25,12 +25,11 @@ const Banner = () => {
             tl.fromTo(
                 '.slide-up-and-fade',
                 { y: 0 },
-                { y: -150, opacity: 0, stagger: 0.02 },
+                { y: -450, opacity: 0, stagger: 0.02, scale: 0.3 },
             );
         },
         { scope: containerRef },
     );
-
     return (
         <section className="relative overflow-hidden" id="banner">
             <ArrowAnimation />
@@ -41,45 +40,13 @@ const Banner = () => {
                 <div className="max-md:grow max-md:flex flex-col justify-center items-center max-w-[544px]">
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton text-center">
                         <span className="text-primary text-nowrap">
-                            Comp Sci \o/
+                            Look who&apos;s here :)
                         </span>
-                        <br /> <span className="">Student</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground text-center">
                         Hi! I&apos;m{' '}
-                        <span className="font-medium text-foreground">
-                            Iyad
-                        </span>
-                        . A computer science student with a passion for
-                        technology, startups and creativity.
+                        iyad
                     </p>
-                </div>
-
-                <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            2+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Years of Experience
-                        </p>
-                    </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            15+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Completed Projects
-                        </p>
-                    </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10,000+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Hours stuck debugging
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
