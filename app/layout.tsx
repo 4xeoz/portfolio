@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Anton, Roboto_Flex } from 'next/font/google';
+import localFont from 'next/font/local';
 import { ReactLenis } from 'lenis/react';
 
 import 'lenis/dist/lenis.css';
@@ -13,17 +13,17 @@ import Preloader from '../components/Preloader';
 import StickyEmail from './_components/StickyEmail';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
-const antonFont = Anton({
+const antonFont = localFont({
+    src: './fonts/anton-latin-400-normal.woff2',
     weight: '400',
     style: 'normal',
-    subsets: ['latin'],
     variable: '--font-anton',
 });
 
-const robotoFlex = Roboto_Flex({
-    weight: ['100', '400', '500', '600', '700', '800'],
+const robotoFlex = localFont({
+    src: './fonts/roboto-flex-latin-standard-normal.woff2',
+    weight: '100 800',
     style: 'normal',
-    subsets: ['latin'],
     variable: '--font-roboto-flex',
 });
 
